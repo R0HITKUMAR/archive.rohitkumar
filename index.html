@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Rohit Kumar</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link href="./assets/css/login.css" rel="stylesheet" />
+    <style>
+        body {
+            background-image: url("./assets/img/bg.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card border-0 shadow rounded-3 my-5">
+                    <div class="card-body p-4 p-sm-5">
+                        <div class="text-center">
+                            <img src="./assets/img/logo-nobg.png" height="100px"
+                                style="margin-top:-10px;margin-bottom:-10px;">
+                        </div>
+                        <hr class="my-4">
+                        <a href="index.html" class="btn btn-google btn-login text-uppercase fw-bold btn-block">Home</a>
+                        <hr class="my-4">
+                        <h3 class="text-center">Log in / Sign in</h3><br>
+                        <form onsubmit="login()" id="loginForm">
+                            <div class="form-floating mb-3">
+                                <input id="email" type="email" class="form-control" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input id="password" type="password" class="form-control" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
+                                    in</button>
+                            </div>
+                        </form>
+                        <hr class="my-4">
+                        <!-- <div class="d-grid mb-2">
+                                <button onclick="signUp()" class="btn btn-google btn-login text-uppercase fw-bold"
+                                    type="submit">
+                                    Sign Up
+                                </button>
+                            </div> -->
+                        <div class="d-grid">
+                            <button onclick="forgotPass()" class="btn btn-facebook btn-login text-uppercase fw-bold">
+                                Forgot Password
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/sweetalert2@11.3.2/dist/sweetalert2.all.min.js,npm/sweetalert2@11.3.2/dist/sweetalert2.min.js,npm/sweetalert2@11.3.2,npm/sweetalert2@11.3.2/dist/sweetalert2.min.js"></script>
+    <script src="./assets/js/firebase.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>
